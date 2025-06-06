@@ -2,7 +2,7 @@
 
 import React from "react";
 import { signIn } from "next-auth/react";
-import { Github, Discord } from "lucide-react";
+import { Github, MessageCircle } from "lucide-react";
 
 export default function SignIn() {
   return (
@@ -23,7 +23,7 @@ export default function SignIn() {
             onClick={() => signIn("discord", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-3 bg-[#5865F2] hover:bg-[#4752C4] text-white py-3 px-4 rounded-lg transition-colors"
           >
-            <Discord className="w-5 h-5" />
+            <MessageCircle className="w-5 h-5" />
             Continue with Discord
           </button>
         </div>
